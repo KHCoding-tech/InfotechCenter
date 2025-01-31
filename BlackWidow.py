@@ -1,6 +1,3 @@
-# Programmer: Konner Hunt
-# Branch: Welcome
-# Date: 1.30.2025
-# Program: BlackWidow 
+print("Welcome Branch - Developer: Konner Hunt")
 
-print("Welcome to InfotechCenter v1.0")
+print("\n\tWelcome to InfoTechCenter v1.0")
