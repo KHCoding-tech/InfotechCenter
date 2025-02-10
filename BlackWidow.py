@@ -2,35 +2,38 @@ print("\n***************************************\n")
 
 print("Weather Branch - Developer: Konner Hunt\n")
 
-#Import Libraries HERE
+# Import necessary libraries
 import random
 from time import sleep
 
-# Weather Function to determine the weather
+# Function to determine the weather condition
 def weather():
     weatherForecastList = ["snowing", "blizzard", "icy", "rainy", "windy", "sunny"]
-    weatherCondition = random.choice(weatherForecastList)
+    weatherCondition = random.choice(weatherForecastList)  # Randomly select a weather condition
     return weatherCondition
 
+# Get the current weather condition
 weatherAlert = weather()
 
+# Function to determine the vehicle response based on the weather condition
 def vehicleResponseSystem():
     if weatherAlert == "snowing":
         print("\nThe National Weather Service has updated your alarm by 30 minutes because"
               " it is", weatherAlert, "outside.\n")
     elif weatherAlert == "blizzard":
-        print("\n The National Weather Service has updated your alarm by 60 minutes because"
+        print("\nThe National Weather Service has updated your alarm by 60 minutes because"
               " it is a", weatherAlert, "outside.\n")
     elif weatherAlert == "icy":
-        print("\n The National Weather Service has updated your alarm by 90 minutes because"
+        print("\nThe National Weather Service has updated your alarm by 90 minutes because"
               " it is", weatherAlert, "outside.\n")
     elif weatherAlert == "rainy":
-        print("\n The National Weather Service has updated your alarm by 10 minutes because"
+        print("\nThe National Weather Service has updated your alarm by 10 minutes because"
               " it is", weatherAlert, "outside.\n")
     elif weatherAlert == "windy":
-        print("\n The National Weather Service has updated your alarm by 5 minutes because"
+        print("\nThe National Weather Service has updated your alarm by 5 minutes because"
               " it is", weatherAlert, "outside.\n")
     else:
-        print("\n The National Weather Service reports it is a beautiful", weatherAlert, "day today.\n")
-        
+        print("\nThe National Weather Service reports it is a beautiful", weatherAlert, "day today.\n")
+
+# Execute the vehicle response system
 vehicleResponseSystem()
