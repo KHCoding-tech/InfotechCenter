@@ -1,6 +1,6 @@
 print("\n***************************************\n")
 
-print("Weather Branch - Developer: Konner Hunt\n")
+print("Weather Branch - Developer: Konner Hunt")
 
 # Import necessary libraries
 import random
@@ -19,21 +19,33 @@ weatherAlert = weather()
 def vehicleResponseSystem():
     if weatherAlert == "snowing":
         print("\nThe National Weather Service has updated your alarm by 30 minutes because"
-              " it is", weatherAlert, "outside.\n")
+              " it is", weatherAlert, "outside.")
+        sleep(1)
+        print("\nVRS has been engaged only allowing us to drive 55MPH.")
     elif weatherAlert == "blizzard":
         print("\nThe National Weather Service has updated your alarm by 60 minutes because"
-              " it is a", weatherAlert, "outside.\n")
+              " it is a", weatherAlert, "outside.")
+        sleep(1)
+        print("\nVRS has been engaged only allowing us to drive 45MPH.")
     elif weatherAlert == "icy":
         print("\nThe National Weather Service has updated your alarm by 90 minutes because"
-              " it is", weatherAlert, "outside.\n")
+              " it is", weatherAlert, "outside.")
+        sleep(1)
+        print("\nVRS has been engaged only allowing us to drive 35MPH.")
     elif weatherAlert == "rainy":
         print("\nThe National Weather Service has updated your alarm by 10 minutes because"
-              " it is", weatherAlert, "outside.\n")
+              " it is", weatherAlert, "outside.")
+        sleep(1)
+        print("\nVRS has been engaged only allowing us to drive 65MPH.")
     elif weatherAlert == "windy":
         print("\nThe National Weather Service has updated your alarm by 5 minutes because"
-              " it is", weatherAlert, "outside.\n")
+              " it is", weatherAlert, "outside.")
+        sleep(1)
+        print("\nVRS has been engaged only allowing us to drive 70MPH.")
     else:
-        print("\nThe National Weather Service reports it is a beautiful", weatherAlert, "day today.\n")
+        print("\nThe National Weather Service reports it is a beautiful", weatherAlert, "day today.")
+        sleep(1)
+        print("\nVRS has been disengaged, drive safe!")
 
 # Execute the vehicle response system
 vehicleResponseSystem()
