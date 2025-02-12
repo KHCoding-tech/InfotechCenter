@@ -1,6 +1,8 @@
 # Import necessary libraries
 import sys  # To interact with system-specific parameters and functions
 import time  # To handle time-related tasks, like sleep delays
+import random
+from time import sleep
 
 # ANSI escape codes for colors
 RESET = "\033[0m"  # Reset to default color
@@ -35,14 +37,10 @@ while x != 20:
 
     # When the loop reaches 20 iterations (booting completed), print the system's status in green
     if x == 20:
-        print("\n\n" + GREEN + "Operating System Booted Up - Retina Scanned - Access Granted\n" + RESET)
+        print("\n\n" + GREEN + "Operating System Booted Up - Retina Scanned - Access Granted" + RESET)
 
 print("\n***************************************\n")
 print("Weather Branch - Developer: Konner Hunt")
-
-# Import necessary libraries
-import random
-from time import sleep
 
 # Function to determine the weather condition
 def weather():
